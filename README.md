@@ -7,7 +7,7 @@ Aura is an iOS app for logging moods, chatting with an AI assistant, and finding
 - **Home hub**: Quick entry to Mood Log, AI Chat, and Resources; logout with confirmation.
 - **Mood Log**: Choose mood, add optional note, save to your private log and auto-publish to the community feed; view recent entries.
 - **Community**: See everyone’s public mood posts and like/unlike them.
-- **AI Chat**: Simple guided conversation with an assistant.
+- **AI Chat**: Real-time conversation powered by Groq (Llama 3.1), acting as a warm mental wellness companion with persistent conversation history.
 - **Resources**: View national hotlines, find nearby support using device/simulated location, open details in Apple Maps, and start navigation.
 
 ## Screens
@@ -107,9 +107,10 @@ service cloud.firestore {
   <img src="Aura/Docs/Screenshots/Community.png" alt="Community" width="30%">
 </div>
 
-### AI Chat
+### AI Chat (powered by Groq / Llama 3.1)
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
   <img src="Aura/Docs/Screenshots/AI%20Chat.png" alt="AI Chat" width="30%">
+  <img src="Aura/Docs/Screenshots/AI%20Chat%20(Groq).png" alt="AI Chat with Real AI" width="30%">
 </div>
 
 ### Resources (list / nearby / map / navigation)
