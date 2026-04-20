@@ -21,3 +21,6 @@ Carthage/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
+
+# Secrets
+Aura/Config/APIConfigs.swift

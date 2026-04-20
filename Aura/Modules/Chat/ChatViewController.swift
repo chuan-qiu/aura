@@ -13,7 +13,7 @@ final class ChatViewController: UIViewController {
     private var messages: [ChatMessage] = []
     
     private let repository = ChatRepository.shared
-    private let mockService = ChatServiceMock.shared
+    private let chatService = ChatService.shared
     
     // MARK: - Lifecycle
     override func loadView() {
@@ -55,7 +55,7 @@ final class ChatViewController: UIViewController {
         let userMessage = ChatMessage(sender: .user, text: text)
         appendAndPersist(userMessage)
         
-        mockService.reply(to: text) { [weak self] response in
+        chatService.reply(to: text) { [weak self] response in
             self?.appendAndPersist(response)
         }
     }
